@@ -5,8 +5,7 @@ import com.nightmare.webqq.plugin.Plugin;
 public class AboutPlugin implements Plugin {
 
 	private String aboutMsg = "None:\nAuthor: Nightmare\nE-mail: danielnanuk@gmail.com\nProject:http://";
-	
-	private static String pattern;
+
 	public AboutPlugin(String aboutMsg) {
 		if (aboutMsg != null)
 			this.aboutMsg = aboutMsg;

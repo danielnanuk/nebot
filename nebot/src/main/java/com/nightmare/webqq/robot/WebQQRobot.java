@@ -5,11 +5,11 @@ public class WebQQRobot {
 	private static WebQQRobot robot;
 
 	private boolean isConnected = false;
-	
-	
-	
+
+	private RobotContext context;
+
 	public WebQQRobot(RobotContext context) {
-		// TODO Auto-generated constructor stub
+		this.setContext(context);
 	}
 
 	public boolean connect() {
@@ -26,7 +26,16 @@ public class WebQQRobot {
 	public boolean isConnected() {
 		return isConnected;
 	}
-	public boolean logout(){
+
+	public boolean logout() {
 		return false;
+	}
+
+	public RobotContext getContext() {
+		return context;
+	}
+
+	public void setContext(RobotContext context) {
+		this.context = context;
 	}
 }
